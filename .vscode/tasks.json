@@ -7,10 +7,11 @@
       "command": "/usr/bin/clang++",
       "args": [
         "-std=c++17",
+        "-stdlib=libc++",
         "-fcolor-diagnostics",
         "-fansi-escape-codes",
         "-g",
-        // "${file}",
+        "${file}",
         "${fileDirname}/**.cpp",
         "-o",
         "${fileDirname}/${fileBasenameNoExtension}"
